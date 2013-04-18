@@ -8,13 +8,13 @@ package childout_Chofle;
  *
  * @author DAW
  */
-public class NewJPanel extends javax.swing.JPanel {
+public class Ventana_Detalle_Alumno extends javax.swing.JPanel {
      Alumno alumno = new Alumno();
      GestionAlumno gestionAlumno = new GestionAlumno();
     /**
-     * Creates new form NewJPanel
+     * Creates new form Ventana_Detalle_Alumno
      */
-    public NewJPanel() {
+    public Ventana_Detalle_Alumno() {
         initComponents();
     }
     public Alumno getAlumno(){
