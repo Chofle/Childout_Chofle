@@ -12,17 +12,17 @@ import javax.swing.DefaultComboBoxModel;
  *
  * @author DAW
  */
-public class Ventana_Detalle_Alumno1 extends java.awt.Dialog {
+public class Ventana_Detalle_Alumno extends java.awt.Dialog {
     Alumno alumno = new Alumno();
     GestionAlumno gestionAlumno = new GestionAlumno();
     ArrayList<String> grupos;
     /**
-     * Creates new form Ventana_Detalle_Alumno1
+     * Creates new form Ventana_Detalle_Alumno
      */
-    public Ventana_Detalle_Alumno1(java.awt.Frame parent, boolean modal) {
+    public Ventana_Detalle_Alumno(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        /*Conexion.conectar("localhost","root","");*/
+        Conexion.conectar("localhost","root","");
         grupos = gestionAlumno.findGrupos();
         grupos.add("Otros");
         String[] arrayParaJComboBox = new String[grupos.size()];
@@ -168,7 +168,7 @@ public class Ventana_Detalle_Alumno1 extends java.awt.Dialog {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Ventana_Detalle_Alumno1 dialog = new Ventana_Detalle_Alumno1(new java.awt.Frame(), true);
+                Ventana_Detalle_Alumno dialog = new Ventana_Detalle_Alumno(new java.awt.Frame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     public void windowClosing(java.awt.event.WindowEvent e) {
                         System.exit(0);
