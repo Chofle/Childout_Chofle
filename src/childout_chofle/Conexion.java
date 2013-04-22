@@ -1,5 +1,5 @@
 
-package childout_Chofle;
+package childout_chofle;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
