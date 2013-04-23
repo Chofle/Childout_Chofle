@@ -155,6 +155,8 @@ public class Ventana_Detalle_Alumno extends java.awt.Dialog {
         }else{
             alumno.setGrupo(grupoSelecionado);
         }
+        setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
